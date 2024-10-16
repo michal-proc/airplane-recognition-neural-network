@@ -57,6 +57,49 @@ Trainable params: 85,026,356
 Non-trainable params: 112
 _____________________________________________________________________________________
 ```
+
+## Running the GUI
+
+The GUI for interacting with the model has been implemented using **PyQt**. To launch the graphical interface, follow these steps:
+
+1. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Navigate to the `application` directory:
+   ```bash
+   cd application
+   ```
+
+3. Run the GUI application:
+   ```bash
+   python app.py
+   ```
+
+The graphical interface will open, allowing you to load images and view the model's predictions for airplane recognition.
+
+## Training the Model
+
+To train the neural network model from scratch, follow these steps:
+
+1. Ensure that all necessary dependencies are installed:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Navigate to the `model` directory:
+   ```bash
+   cd model
+   ```
+
+3. Run the training script:
+   ```bash
+   python model.py
+   ```
+
+This will start training the Convolutional Neural Network (CNN) on the dataset, displaying progress and accuracy metrics during each epoch.
+
 ## Data 
 
 The dataset comprises 318,588 images belonging to 44 different classes of military aircraft, with a training set of 254,871 images and a validation set of 63,717 images. The images are organized in directories named after the aircraft models.
